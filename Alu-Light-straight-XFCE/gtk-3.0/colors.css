@@ -1,0 +1,32 @@
+@define-color headerbar_color #686868;
+@define-color headerbar_text_color #151515;
+@define-color headerbar_text_shadow_color transparent;
+@define-color color_accent #151515;
+@define-color close_color #353535;
+@define-color color_100 shade(@color_accent,1.9);
+@define-color color_200 shade(@color_accent,1.4);
+@define-color color_400 shade(@color_accent,1.2);
+@define-color color_500 shade(@color_accent,1.1);
+@define-color color_600 @color_accent;
+@define-color color_700 shade(@color_accent,0.9);
+@define-color color_800 shade(@color_accent,0.8);
+@define-color color_900 shade(@color_accent,0.7);
+@define-color color_1000 shade(@color_accent,0.3);
+
+.test-color-here {
+    color: #151515;
+}
+
+@define-color __text #252525;
+@define-color __text_shadow1 @__text;
+@define-color __text_shadow2 #B9B9B9;
+@define-color __background_back rgba(250, 250, 250, 0.99);
+
+@define-color __disabled_text #8b8b8b;
+@define-color __disabled_text_shadow1 @__disabled_text;
+@define-color __disabled_text_shadow2 @__text_shadow2;
+
+@define-color __selected_text #b5b5b5;
+@define-color __selected_text_shadow1 @__selected_text;
+@define-color __selected_text_shadow2 shade(@color_accent,0.3);
+@define-color __selected_back #151515;
